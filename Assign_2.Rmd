@@ -1,0 +1,21 @@
+---
+title: "Map created with Leaflet"
+author: "Mahesh Ch"
+date: "11/3/2020"
+output: html_document
+---
+
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(leaflet)
+library(dplyr)
+library(ggplot2)
+
+  r_map <- leaflet() %>%
+  addTiles() %>%  # use the default base map which is OpenStreetMap tiles
+  addMarkers(lng=13.404954, lat=52.520008,
+             popup="The Capital of Germany")
+r_map
+```
+
