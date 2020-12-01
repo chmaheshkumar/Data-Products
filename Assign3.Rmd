@@ -1,0 +1,21 @@
+---
+title: "Plotly presentation"
+author: "Mahesh Ch"
+date: "11/15/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library("plotly",warn.conflicts = FALSE)
+library("dplyr",warn.conflicts = FALSE)
+```
+### Cars
+```{r cars, eval=TRUE}
+mpg %>%
+  plot_ly(x = ~displ, y = ~hwy, color = ~class) %>%
+  add_trace(type = "scatter", mode = "markers")
+```
+
+
+
