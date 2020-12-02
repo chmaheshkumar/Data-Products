@@ -1,0 +1,12 @@
+name: my_example
+title: my_example
+username:
+account: assignwork
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3332976
+bundleId: 3928851
+url: https://assignwork.shinyapps.io/my_example/
+when: 1606848249.82313
+asMultiple: FALSE
+asStatic: FALSE
